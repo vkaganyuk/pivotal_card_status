@@ -9,7 +9,7 @@ get '/' do
   report = PivotalCardChecker::CardChecker.check_cards(ENV['API_KEY'], ENV['PROJECT_ID'])
   report.gsub!("\n", "<br />")
   report.gsub!("        ", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;") if report.include?('        ')
-  report.gsub!(/https.*?\d+/) {|sym| "<a target='_blank' href='#{sym}'>#{sym}</a>"} if report.include('https')
+  report.gsub!(/https.*?\d+/) {|sym| "<a target='_blank' href='#{sym}'>#{sym}</a>"} if report.include?('https')
 end
 
 get '/plaintext' do
