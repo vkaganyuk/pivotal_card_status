@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/hedgeyedev/pivotal_card_checker.git
-  revision: c9c7f140997270cc77f6e9fddf9578c15097492b
+  revision: 3bf5225bb57e8e4e05985e9460234a089edd9465
   branch: master
   specs:
     pivotal_card_checker (0.0.1)
